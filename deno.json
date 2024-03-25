@@ -1,0 +1,19 @@
+{
+  "name": "@check/self",
+  "version": "0.3.0",
+  "exports": "./mod.ts",
+  "imports": {
+    "@check/deps": "jsr:@check/deps@^0.3.0",
+    "@std/semver": "jsr:@std/semver@^0.220.1"
+  },
+  "publish": {
+    "exclude": [".github", "examples"]
+  },
+  "tasks": {
+    "check": "deno fmt --check && deno lint && deno check mod.ts && deno doc --lint mod.ts && deno run -A jsr:@check/deps",
+    "check-deps": "deno run -A jsr:@check/deps"
+  },
+  "fmt": {
+    "lineWidth": 120
+  }
+}
