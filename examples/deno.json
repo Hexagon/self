@@ -1,0 +1,6 @@
+{
+  "name": "@check/deps",
+  "version": "0.3.0",
+  "exports": "./mod.ts",
+  "imports": { "@check/self": "jsr:@check/self@^0.3.0" }
+}

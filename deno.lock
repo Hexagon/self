@@ -45,6 +45,7 @@
   "workspace": {
     "dependencies": [
       "jsr:@check/deps@^0.3.0",
+      "jsr:@check/self@^0.3.0",
       "jsr:@std/semver@^0.220.1"
     ]
   }
