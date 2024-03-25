@@ -1,4 +1,4 @@
-import { fetchJsrPackageMeta, readDenoConfig } from "@check/deps/lib";
+import { fetchJsrPackageMeta, readDenoConfig } from "@check/deps";
 import { greaterOrEqual, parse } from "@std/semver";
 
 /**

@@ -2,7 +2,9 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "jsr:@check/deps@^0.3.0": "jsr:@check/deps@0.3.0",
+      "jsr:@check/deps@^0.3.1": "jsr:@check/deps@0.3.1",
+      "jsr:@cross/runtime@^1.0.0": "jsr:@cross/runtime@1.0.0",
+      "jsr:@cross/utils@^0.8.2": "jsr:@cross/utils@0.8.2",
       "jsr:@std/assert@^0.220.1": "jsr:@std/assert@0.220.1",
       "jsr:@std/json@^0.220.1": "jsr:@std/json@0.220.1",
       "jsr:@std/jsonc@^0.220.1": "jsr:@std/jsonc@0.220.1",
@@ -10,11 +12,21 @@
       "jsr:@std/semver@^0.220.1": "jsr:@std/semver@0.220.1"
     },
     "jsr": {
-      "@check/deps@0.3.0": {
-        "integrity": "c8e54b2016dc85c4dafcd8adfebcc6fdd34a4abe77037dbc69a5997e7e3c6c3f",
+      "@check/deps@0.3.1": {
+        "integrity": "40df5f21eac71ee7d935a01bbe945b8dcf389203690989e331dac61118c09ff4",
         "dependencies": [
+          "jsr:@cross/utils@^0.8.2",
           "jsr:@std/jsonc@^0.220.1",
           "jsr:@std/path@^0.220.1"
+        ]
+      },
+      "@cross/runtime@1.0.0": {
+        "integrity": "dddecdf99182df13d50279d1e473f715e83d41961c5c22edd7bb0c4c3cf8a76a"
+      },
+      "@cross/utils@0.8.2": {
+        "integrity": "be80b2100cb9db3d8a28de73e1e85f9bbbee21a13ae2842d783bf2e1401dbfa2",
+        "dependencies": [
+          "jsr:@cross/runtime@^1.0.0"
         ]
       },
       "@std/assert@0.220.1": {
@@ -44,8 +56,7 @@
   "remote": {},
   "workspace": {
     "dependencies": [
-      "jsr:@check/deps@^0.3.0",
-      "jsr:@check/self@^0.3.0",
+      "jsr:@check/deps@^0.3.1",
       "jsr:@std/semver@^0.220.1"
     ]
   }

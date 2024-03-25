@@ -1,10 +1,9 @@
 {
   "name": "@check/self",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "exports": "./mod.ts",
   "imports": {
-    "@check/deps/lib": "jsr:@check/deps@^0.3.0/lib",
-    "@check/self": "jsr:@check/self@^0.3.0",
+    "@check/deps": "jsr:@check/deps@^0.3.1",
     "@std/semver": "jsr:@std/semver@^0.220.1"
   },
   "publish": {
